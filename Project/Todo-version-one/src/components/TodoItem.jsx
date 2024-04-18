@@ -1,10 +1,10 @@
-const TodoItem2 = () => {
+const TodoItem = ({ todoName, todoDate }) => {
   return (
     <div>
-      <div className="container">
+      <div className="container ">
         <div className="row r-row">
-          <div className="col-6">Buy Milk</div>
-          <div className="col-4">04/10/2024</div>
+          <div className="col-6">{todoName}</div>
+          <div className="col-4">{todoDate}</div>
           <div className="col-2">
             <button className="btn btn-danger bt-button">Delete</button>
           </div>
@@ -14,4 +14,4 @@ const TodoItem2 = () => {
   );
 };
 
-export default TodoItem2;
+export default TodoItem;
